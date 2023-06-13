@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+            <header>
+                <div class="logo">
+                  <img src="MI27.PNG" alt="Logo de la tienda">
+                </div>
+                
+              </header>
+
+
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito"></p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+            
+		</header>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/_OXIa5omtp0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTd8fGlwaG9uZSUyMDExfGVzfDB8fHx8MTY4NjI4MDYwM3ww&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 11</h2>
+					<p class="price">$350</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/X5V7hb7CxNY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8aXBob25lJTIwMTElMjBQUk8lMjBNQVh8ZXN8MHx8fHwxNjg2MjgwNzc4fDA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 11 PRO MAX</h2>
+					<p class="price">$450</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/YixWSz9TK7M/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTB8fGlwaG9uZSUyMDEyfGVzfDB8fHx8MTY4NjI4MzczNXww&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 12</h2>
+					<p class="price">$450</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/prRuk1h40oo/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTd8fGlwaG9uZSUyMDEyfGVzfDB8fHx8MTY4NjI4MzczNXww&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 12 PRO MAX</h2>
+					<p class="price">$650</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/KA-HLgxKfcs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTkxfHxpcGhvbmUlMjAxM3xlc3wwfHx8fDE2ODYzMTI3NDJ8MA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 13</h2>
+					<p class="price">$600</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		    <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/fu_FGCqSUp0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8aXBob25lJTIwMTMlMjBQUk8lMjBNQVh8ZXN8MHx8fHwxNjg2MzEyNDU4fDA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 13 PRO MAX</h2>
+					<p class="price">$950</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/98qe5sFlayc/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg2MzEzNDMxfA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 14</h2>
+					<p class="price">$900</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/M50ff-rGhJE/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjF8fGlwaG9uZSUyMDE0fGVzfDB8fHx8MTY4NjMxMzQyNXww&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>IPHONE 14 PRO MAX</h2>
+					<p class="price">$1200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/psGV5KhidlY/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg2MzE1MTkzfA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>MACBOOK PRO 2020</h2>
+					<p class="price">$1100</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/8RU4OuA6Yug/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTJ8fG1hY2Jvb2slMjBhaXJ8ZXN8MHx8fHwxNjg2MzE5NTAzfDA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>MACBOOK AIR 2020</h2>
+					<p class="price">$1000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/S2CWsE_xHAk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MjR8fGFwcGxlJTIwd2F0Y2h8ZXN8MHx8fHwxNjg2MzI3MTkxfDA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>APPLE WATCH SERIE 6</h2>
+					<p class="price">$300</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/oOlPR-Fwd7A/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OTF8fGFwcGxlJTIwd2F0Y2h8ZXN8MHx8fHwxNjg2MzMzOTY4fDA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>APPLE WATCH SERIE 8</h2>
+					<p class="price">$400</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/BNJjDz3tdqA/download?force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>APPLE WATCH ULTRA</h2>
+					<p class="price">$800</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/r2uugFQvAZ0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mjd8fGFwcGxlJTIwYWlycG9kcyUyMG1heHxlc3wwfHx8fDE2ODYzMzQ1MjB8MA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>AIRPODS MAX</h2>
+					<p class="price">$500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/G_GFA2grq-k/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8N3x8YXBwbGUlMjBhaXJwb2RzfGVzfDB8fHx8MTY4NjM1MTI3Mnww&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>AIRPODS PRO</h2>
+					<p class="price">$200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/NFkP62Z85Jk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NDh8fGhvbWVwb2R8ZXN8MHx8fHwxNjg2NTM2MjM1fDA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Homepod</h2>
+					<p class="price">$150</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/KOXJwfimCB0/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8Q0FSR0FET1IlMjBERSUyMElQSE9ORXxlc3wwfHx8fDE2ODY1MzY3NTF8MA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>CARGADOR APPLE</h2>
+					<p class="price">$30</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/p4ammwR83NI/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTN8fGFpcnRhZ3xlc3wwfHx8fDE2ODY1MzY0NTV8MA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>AIRTAG</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+            <div class="item">
+				<figure>
+					<img
+						src="https://unsplash.com/photos/p4ammwR83NI/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTN8fGFpcnRhZ3xlc3wwfHx8fDE2ODY1MzY0NTV8MA&force=true&w=640"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>AIRTAG</h2>
+					<p class="price">$20</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		<script src="index.js"></script>
+	</body>
+</html>
